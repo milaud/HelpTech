@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    android:weightSum="2"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="How can we help?"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/main_screen_border"
+            android:text="Get live\nfeedback"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_screen_border"
+            android:text="Ask a\n question"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_screen_border"
+            android:text="Step by step\n guides"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_screen_border"
+            android:text="My past\n questions"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
