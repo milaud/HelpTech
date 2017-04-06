@@ -35,14 +35,14 @@
             android:orientation="vertical"
             android:layout_weight="1"
             >
+
             <ImageButton
                 android:id="@+id/imageButton1"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:src="@drawable/ic_live_feedback"
-                android:paddingTop="30dp"
                 android:background="@color/white"
-                />
+                android:paddingTop="30dp"
+                android:src="@drawable/ic_live_feedback" />
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"

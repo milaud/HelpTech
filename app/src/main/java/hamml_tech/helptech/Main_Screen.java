@@ -1,8 +1,8 @@
 package hamml_tech.helptech;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -24,5 +24,16 @@ public class Main_Screen extends AppCompatActivity {
                 println("test");
             }
         });
+
+        //step by step guides button
+        Button step = (Button)findViewById(R.id.button3);
+        ImageButton image3 = (ImageButton)findViewById(R.id.imageButton3);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main_Screen.this, step_guides_1.class));
+            }
+        });
+
     }
 }
