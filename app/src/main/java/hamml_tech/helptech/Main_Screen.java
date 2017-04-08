@@ -35,5 +35,14 @@ public class Main_Screen extends AppCompatActivity {
             }
         });
 
+        //ask a question button
+        Button ask = (Button)findViewById(R.id.button2);
+        ask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Main_Screen.this, Ask_A_Question.class));
+            }
+        });
+
     }
 }
