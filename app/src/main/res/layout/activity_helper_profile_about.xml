@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/profile_layout_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/profile_tab_about"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="About"
+            android:textSize="16dp"
+            android:background="@drawable/main_screen_border"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/profile_tab_answers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Answers"
+            android:textSize="16dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/profile_tab_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Activity"
+            android:textSize="16dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/profile_layout_tabs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottom_directory">
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!-- above box (image view) is for helper's picture -->
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_name"
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/profile_picture"
+            android:layout_toEndOf="@+id/profile_picture" />
+
+        <ImageView
+            android:id="@+id/profile_top_line"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:background="@drawable/basic_line_seperator"
+
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/profile_picture"
+            android:layout_toEndOf="@+id/profile_picture"
+            />
+
+        <TextView
+            android:id="@+id/profile_days_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_days_available"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+
+            android:layout_below="@+id/profile_name"
+            android:layout_toRightOf="@+id/profile_picture"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:id="@+id/profile_hours_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_hours_available"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/profile_days_available"
+            android:layout_toRightOf="@+id/profile_picture"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/profile_slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_slogan"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            android:layout_alignTop="@+id/profile_mid_line"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/profile_mid_line"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/basic_line_seperator"
+
+            android:layout_below="@+id/profile_picture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            />
+
+        <TextView
+            android:id="@+id/profile_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_website"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            android:layout_alignBottom="@+id/profile_mid_line"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/helper_topics"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/profile_mid_line"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@id/bottom_directory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Home"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Search"
+            android:textSize="18sp"
+            android:layout_weight="4" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Back"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
