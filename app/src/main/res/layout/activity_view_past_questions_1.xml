@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/pastQuestionsDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device"
+            android:textSize="30dp"
+            />
+
+        <Spinner
+            android:id="@+id/past_device_spin_list"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:prompt="@array/device_array"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pastQuestionsDevice"
+        android:foreground="@drawable/basic_line_seperator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/pastQuestionsButton1"
+                android:text="Question 1"
+                android:background="@color/colorAccent"
+                style="@style/QuestionButton"
+                />
+            <Button
+                android:id="@+id/pastQuestionsButton2"
+                android:text="Question 2"
+                android:background="@color/colorAccentDark"
+                style="@style/QuestionButton"
+                />
+            <Button
+                android:id="@+id/pastQuestionsButton3"
+                android:text="Question 3"
+                android:background="@color/colorAccent"
+                style="@style/QuestionButton"
+                />
+            <Button
+                android:id="@+id/pastQuestionsButton4"
+                android:text="Question 4"
+                android:background="@color/colorAccentDark"
+                style="@style/QuestionButton"
+                />
+            <Button
+                android:id="@+id/pastQuestionsButton5"
+                android:text="Question 5"
+                android:background="@color/colorAccent"
+                style="@style/QuestionButton"
+                />
+            <Button
+                android:id="@+id/pastQuestionsButton6"
+                android:text="Question 6"
+                android:background="@color/colorAccentDark"
+                style="@style/QuestionButton"
+                />
+            <Button
+                android:id="@+id/pastQuestionsButton7"
+                android:text="Question 7"
+                android:background="@color/colorAccent"
+                style="@style/QuestionButton"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
