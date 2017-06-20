@@ -72,16 +72,15 @@
             />
     </ScrollView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/liveFeedbackChatInput"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:foreground="@drawable/basic_line_seperator"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            />
+    <Button
+        android:id="@+id/liveFeedbackChatSendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Send"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        />
 
         <EditText
             android:id="@+id/liveFeedbackChatInput"
@@ -96,15 +95,14 @@
             android:layout_marginRight="10dp"
             />
 
-        <Button
-            android:id="@+id/liveFeedbackChatSendButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="Send"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            />
-
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/liveFeedbackChatInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:foreground="@drawable/basic_line_seperator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
     </RelativeLayout>
