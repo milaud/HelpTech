@@ -5,8 +5,8 @@
     <string name="helper_name">Helper\'s \nName</string>
     <string name="helper_website">helper-website.com</string>
     <string name="helper_slogan">\"Helper Custom Slogan\"</string>
-    <string name="helper_days_available">Days"\n"M T W Th F S Su</string>
-    <string name="helper_hours_available">Hours\n12pm - 2pm</string>
+    <string name="helper_days_available">M T W Th F S Su</string>
+    <string name="helper_hours_available">12pm - 2pm</string>
     <string name="helper_topics">Topics\n• Android Basics\n• Android Applications\n• Windows Basics \n• iOS Basics</string>
     <string-array name="device_array">
         <item>iPhone</item>

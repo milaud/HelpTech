@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make an Account"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill out the following information."
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+
+            android:layout_marginBottom="50dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpUsername"
+            android:hint="Username"
+            android:textSize="20sp"
+            android:maxLines="1"
+
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpPassword"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpRepassword"
+            android:hint="Retype password"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpFirstName"
+            android:hint="First Name"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:maxLines="1"
+
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpLastName"
+            android:hint="Last Name"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:maxLines="1"
+
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpEmail"
+            android:hint="Email Address"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpPhone"
+            android:hint="Phone Number"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:maxLines="1"
+
+            android:layout_marginBottom="15dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpConfirmButton"
+            android:text="Confirm"
+            android:textSize="18sp"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>
+
+</ScrollView>

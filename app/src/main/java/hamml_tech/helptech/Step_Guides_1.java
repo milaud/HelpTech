@@ -3,7 +3,7 @@ package hamml_tech.helptech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class step_guides_1 extends AppCompatActivity {
+public class Step_Guides_1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
