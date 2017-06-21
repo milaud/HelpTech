@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="About"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:background="@drawable/main_screen_border"
             android:layout_weight="1"
 
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Answers"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:background="@color/white"
             android:layout_weight="1"
             />
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Activity"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:background="@color/white"
             android:layout_weight="1"
             />
@@ -53,12 +53,11 @@
         android:orientation="vertical"
         android:layout_below="@+id/profile_layout_tabs"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/bottom_directory">
+        android:layout_alignParentStart="true">
 
         <ImageView
             android:id="@+id/profile_picture"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
             android:background="@color/colorAccent"
 
@@ -68,72 +67,80 @@
 
         <!-- above box (image view) is for helper's picture -->
 
-        <TextView
-            android:id="@+id/profile_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/helper_name"
-            android:textSize="32dp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
+    </RelativeLayout>
 
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/profile_picture"
-            android:layout_toEndOf="@+id/profile_picture" />
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helper_name"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
 
-        <ImageView
-            android:id="@+id/profile_top_line"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:background="@drawable/basic_line_seperator"
 
-            android:layout_marginTop="55dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/profile_picture"
-            android:layout_toEndOf="@+id/profile_picture"
-            />
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@id/profile_layout_about"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/profile_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helper_slogan"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+
+        android:layout_below="@+id/profile_name"
+        android:layout_alignTop="@id/profile_layout_about"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/profile_top_line"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:background="@drawable/basic_line_seperator"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/profile_slogan"
+        />
+
+    <TextView
+        android:id="@+id/profile_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helper_website"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/profile_top_line"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/profile_layout_about"
+        >
 
         <TextView
             android:id="@+id/profile_days_available"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/helper_days_available"
-            android:textSize="18dp"
-            android:textColor="@color/colorPrimary"
-            android:textAlignment="center"
-
-            android:layout_below="@+id/profile_name"
-            android:layout_toRightOf="@+id/profile_picture"
-            android:layout_marginTop="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            />
-
-        <TextView
-            android:id="@+id/profile_hours_available"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/helper_hours_available"
-            android:textSize="18dp"
-            android:textColor="@color/colorPrimary"
-            android:textAlignment="center"
-
-            android:layout_marginTop="8dp"
-            android:layout_below="@+id/profile_days_available"
-            android:layout_toRightOf="@+id/profile_picture"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-
-        <TextView
-            android:id="@+id/profile_slogan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/helper_slogan"
-            android:textSize="20dp"
+            android:text="@string/helper_days_available"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textAlignment="center"
 
@@ -147,17 +154,16 @@
             android:layout_height="50dp"
             android:background="@drawable/basic_line_seperator"
 
-            android:layout_below="@+id/profile_picture"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="13dp"
             />
 
         <TextView
-            android:id="@+id/profile_website"
+            android:id="@+id/profile_hours_available"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/helper_website"
-            android:textSize="20dp"
+            android:text="@string/helper_hours_available"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textAlignment="center"
 
@@ -170,7 +176,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/helper_topics"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="@color/colorPrimary"
             android:textAlignment="center"
 
@@ -180,11 +186,12 @@
             android:layout_alignParentStart="true"
             android:id="@+id/textView" />
 
+
     </RelativeLayout>
 
 
     <LinearLayout
-        android:id="@id/bottom_directory"
+        android:id="@+id/bottom_directory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -217,7 +224,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorAccent"
-            android:text="Back"
+            android:text="Log out"
             android:textSize="18sp" />
 
 
