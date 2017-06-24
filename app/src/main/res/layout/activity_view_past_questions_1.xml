@@ -55,7 +55,7 @@
             <Button
                 android:id="@+id/pastQuestionsButton1"
                 android:text="Question 1"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimary"
                 style="@style/QuestionButton"
                 />
             <Button
@@ -67,7 +67,7 @@
             <Button
                 android:id="@+id/pastQuestionsButton3"
                 android:text="Question 3"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimary"
                 style="@style/QuestionButton"
                 />
             <Button
@@ -79,7 +79,7 @@
             <Button
                 android:id="@+id/pastQuestionsButton5"
                 android:text="Question 5"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimary"
                 style="@style/QuestionButton"
                 />
             <Button
@@ -91,10 +91,44 @@
             <Button
                 android:id="@+id/pastQuestionsButton7"
                 android:text="Question 7"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimary"
                 style="@style/QuestionButton"
                 />
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_directory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_alignParentBottom="true" >
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:text="Home"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_weight="4"
+            android:src="@drawable/ic_search" />
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:text="Log out"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+    </LinearLayout>
 </RelativeLayout>

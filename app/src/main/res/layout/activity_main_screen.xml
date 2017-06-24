@@ -142,38 +142,34 @@
     <LinearLayout
         android:id="@+id/bottom_directory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
-        android:weightSum="6"
-        >
-
+        android:weightSum="6" >
         <Button
             android:id="@+id/homeButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/colorAccent"
             android:text="Home"
             android:textSize="18sp"
             android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/searchButton"
+        <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/colorAccent"
-            android:text="Search"
             android:textSize="18sp"
-            android:layout_weight="4" />
+            android:layout_weight="4"
+            android:src="@drawable/ic_search" />
 
         <Button
             android:id="@+id/logOutButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/colorAccent"
             android:text="Log out"
             android:textSize="18sp"
             android:layout_weight="1" />
-
     </LinearLayout>
 
 </LinearLayout>
