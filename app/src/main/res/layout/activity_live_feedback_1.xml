@@ -33,6 +33,7 @@
             android:layout_height="match_parent"
             android:text="@string/helper_name"
             android:textSize="18dp"
+            android:textColor="black"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             />
@@ -42,6 +43,7 @@
             android:layout_width="210dp"
             android:layout_height="match_parent"
             android:text="@string/helper_slogan"
+            android:textColor="@color/colorPrimary"
             android:textSize="15dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
@@ -74,9 +76,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:textColor="black"
             android:text="The chat goes here"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             />
     </ScrollView>
 
@@ -96,6 +101,7 @@
             android:layout_height="45dp"
             android:layout_below="@id/liveFeedbackMidDivider"
             android:hint="Type your question"
+            android:textColor="@color/colorPrimary"
             android:maxLines="1"
             android:textSize="20sp"
             android:layout_alignParentLeft="true"

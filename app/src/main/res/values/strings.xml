@@ -8,10 +8,12 @@
     <string name="helper_days_available">M T W Th F S Su</string>
     <string name="helper_hours_available">12pm - 2pm</string>
     <string name="helper_topics">Topics\n• Android Basics\n• Android Applications\n• Windows Basics \n• iOS Basics</string>
+
     <string-array name="device_array">
         <item>iPhone</item>
         <item>Android</item>
         <item>Macbook</item>
     </string-array>
 
+    <string name="past_questions_title_1">Title of Question Here</string>
 </resources>
