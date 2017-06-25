@@ -16,4 +16,6 @@
     </string-array>
 
     <string name="past_questions_title_1">Title of Question Here</string>
+    <string name="past_questions_q_1">Question will be located here\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.</string>
+    <string name="past_questions_a_1">Answer will be located here\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.</string>
 </resources>

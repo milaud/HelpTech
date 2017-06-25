@@ -33,7 +33,7 @@
             android:layout_height="match_parent"
             android:text="@string/helper_name"
             android:textSize="18dp"
-            android:textColor="black"
+            android:textColor="@color/black"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             />
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:textColor="black"
+            android:textColor="@color/black"
             android:text="The chat goes here"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
