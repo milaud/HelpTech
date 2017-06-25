@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentTop="true"
-        android:weightSum="3"
+        android:weightSum="2"
         >
 
         <Button
@@ -22,7 +22,6 @@
             android:textSize="16sp"
             android:background="@drawable/main_screen_border"
             android:layout_weight="1"
-
             />
 
         <Button
@@ -30,16 +29,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Answers"
-            android:textSize="16sp"
-            android:background="@color/white"
-            android:layout_weight="1"
-            />
-
-        <Button
-            android:id="@+id/profile_tab_activity"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Activity"
             android:textSize="16sp"
             android:background="@color/white"
             android:layout_weight="1"
@@ -128,65 +117,6 @@
         android:layout_below="@+id/profile_top_line"
         />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_below="@id/profile_layout_about"
-        >
-
-        <TextView
-            android:id="@+id/profile_days_available"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/helper_days_available"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-
-            android:layout_alignTop="@+id/profile_mid_line"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <ImageView
-            android:id="@+id/profile_mid_line"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:background="@drawable/basic_line_seperator"
-
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
-            />
-
-        <TextView
-            android:id="@+id/profile_hours_available"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/helper_hours_available"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textAlignment="center"
-
-            android:layout_alignBottom="@+id/profile_mid_line"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/helper_topics"
-            android:textSize="20sp"
-            android:textColor="@color/colorPrimary"
-            android:textAlignment="center"
-
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/profile_mid_line"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/textView" />
-    </RelativeLayout>
-
     <LinearLayout
         android:id="@+id/bottom_directory"
         android:layout_width="match_parent"
@@ -220,4 +150,129 @@
             android:textSize="18sp"
             android:layout_weight="1" />
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/profile_layout_about"
+        android:layout_above="@id/bottom_directory"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_mid_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/basic_line_seperator"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:id="@+id/profile_days_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helper_days_available"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/profile_mid_line"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAYS"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/profile_mid_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:id="@+id/profile_hours_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helper_hours_available"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/profile_days_available"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOURS"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/profile_days_available"
+                />
+
+            <ImageView
+                android:id="@+id/profile_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/basic_line_seperator"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/profile_hours_available"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helper_topics"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/profile_bottom_line"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOPICS"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/profile_bottom_line"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

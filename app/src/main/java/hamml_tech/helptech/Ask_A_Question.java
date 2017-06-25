@@ -22,7 +22,7 @@ public class Ask_A_Question extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ask__a__question);
+        setContentView(R.layout.activity_ask_a_question_1);
         addItemsOnSpinner();
 
         Button post = (Button) findViewById(R.id.post_button);
