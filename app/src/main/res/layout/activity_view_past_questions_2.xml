@@ -3,144 +3,176 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-        <TextView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pastQuestions2QuestionTitle"
+        android:text="@string/past_questions_title_1"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/basic_line_seperator"
+        android:layout_below="@id/pastQuestions2QuestionTitle"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/pastQuestions2MidDivide"
+        android:src="@drawable/basic_line_seperator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pastQuestions2TopScroll"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/pastQuestions2QuestionTitle"
+        android:layout_above="@id/pastQuestions2MidDivide"
+
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pastQuestions2QuestionLabel"
+                android:text="QUESTION"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pastQuestions2QuestionContent"
+                android:text="@string/past_questions_q_1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/pastQuestions2QuestionLabel" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/bottom_directory"
+        android:layout_below="@id/pastQuestions2MidDivide"
+
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pastQuestions2AnswerLabel"
+                android:text="ANSWER"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pastQuestions2AnswerContent"
+                android:text="@string/past_questions_a_1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/pastQuestions2AnswerLabel" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/pastQuestions2AnswerHelper"
+                android:text="@string/past_questions_helper_1"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:background="@null"
+                android:textAlignment="textStart"
+                android:gravity="start"
+
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/pastQuestions2AnswerContent"
+                android:visibility="gone"/>
+            <!-- show the above button when the question is ANSWERED -->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/pastQuestions2AnsweDiscussion"
+                android:text="Go to the discussion"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:background="@null"
+                android:textAlignment="textStart"
+                android:gravity="start"
+
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/pastQuestions2AnswerContent"/>
+            <!-- show the above button when the question is UNANSWERED -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_directory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_alignParentBottom="true" >
+        <Button
+            android:id="@+id/homeButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/pastQuestions2QuestionTitle"
-            android:text="@string/past_questions_title_1"
-            android:textSize="30sp"
-            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:text="Home"
+            android:textSize="18sp"
+            android:layout_weight="1" />
 
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginTop="2dp"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:src="@drawable/basic_line_seperator"
-            android:layout_below="@id/pastQuestions2QuestionTitle"
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_weight="4"
+            android:src="@drawable/ic_search" />
 
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            />
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:id="@+id/pastQuestions2MidDivide"
-            android:src="@drawable/basic_line_seperator"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_centerInParent="true" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/pastQuestions2TopScroll"
-
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/pastQuestions2QuestionTitle"
-            android:layout_above="@id/pastQuestions2MidDivide"
-
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            >
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/pastQuestions2QuestionLabel"
-                    android:text="QUESTION"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="22sp"
-                    android:layout_marginTop="5dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/pastQuestions2QuestionContent"
-                    android:text="@string/past_questions_q_1"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_below="@id/pastQuestions2QuestionLabel" />
-            </RelativeLayout>
-        </ScrollView>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_above="@id/bottom_directory"
-            android:layout_below="@id/pastQuestions2MidDivide"
-
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            >
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/pastQuestions2AnswerLabel"
-                    android:text="ANSWER"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="22sp"
-                    android:layout_marginTop="5dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/pastQuestions2AnswerContent"
-                    android:text="@string/past_questions_a_1"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_below="@id/pastQuestions2AnswerLabel" />
-            </RelativeLayout>
-        </ScrollView>
-
-        <LinearLayout
-            android:id="@+id/bottom_directory"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:weightSum="6"
-            android:layout_alignParentBottom="true" >
-            <Button
-                android:id="@+id/homeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent"
-                android:text="Home"
-                android:textSize="18sp"
-                android:layout_weight="1" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent"
-                android:textSize="18sp"
-                android:layout_weight="4"
-                android:src="@drawable/ic_search" />
-
-            <Button
-                android:id="@+id/logOutButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@color/colorAccent"
-                android:text="Log out"
-                android:textSize="18sp"
-                android:layout_weight="1" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:text="Log out"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+    </LinearLayout>
 </RelativeLayout>

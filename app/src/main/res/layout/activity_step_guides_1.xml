@@ -63,6 +63,7 @@
             android:layout_width="285dp"
             android:layout_height="46dp"
             android:text="Which Device?"
+            android:textColor="@color/colorPrimary"
             android:textAlignment="center"
             android:textSize="36sp"
             android:textStyle="bold"
